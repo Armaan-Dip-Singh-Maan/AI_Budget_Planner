@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# 🎯 AI-Enhanced Budgeting App for Canadian Students
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An intelligent budgeting app built with React, Bootstrap, AWS Amplify, and Generative AI, designed specifically to help Canadian students manage their finances effectively.
 
-## Available Scripts
+## 🚩 Features:
 
-In the project directory, you can run:
+- ✅ **User Authentication**: Secure login and signup (AWS Amplify).
+- ✅ **Expense Tracking & Categorization**: Easy management and categorization of expenses.
+- ✅ **Income Management**: Track and manage income clearly.
+- ✅ **AI-Generated Budget Recommendations**: Personalized financial advice using Generative AI.
+- ✅ **Local Student Discounts & Promotions**: Highlighting exclusive Canadian student deals.
 
-### `npm start`
+## 🛠️ Tech Stack:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend:** React, JavaScript, Bootstrap
+- **Backend & Hosting:** AWS Amplify
+- **AI Integration:** Generative AI via AWS Bedrock or OpenAI API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Project Structure:
 
-### `npm test`
+ai-budget-app │── public │── src │ ├── components (All React components) │ ├── pages (Main pages/screens) │ ├── App.js │ ├── index.js │ └── index.css (Global CSS & Bootstrap imported) │── package.json └── README.md
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+perl
+Copy
 
-### `npm run build`
+## 🚀 Getting Started:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm install
+Run development server:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy
+npm start
+Access the app at http://localhost:3000.
 
-### `npm run eject`
+☁️ AWS Amplify:
+Integrated AWS Amplify services (Authentication, Database, Hosting)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Configure and deploy easily with Amplify CLI.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📅 Development Roadmap:
+Day 1 (Setup): React app initialized, GitHub & AWS Amplify setup. ✔️
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Day 2: UI design and frontend components.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Day 3: AWS Amplify Authentication & Backend Integration.
 
-## Learn More
+Day 4: Expense & Income Management.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Day 5: Generative AI integration.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Day 6: Discounts Module & financial tips.
 
-### Code Splitting
+Day 7: Testing, Deployment & documentation.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🧑‍💻 Developed by:
+Armaandip Singh Maan
+Contact: [armaandipmaan@gmail.com](mailto:armaandipmaan@gmail.com
+)
+Linkedin : https://www.linkedin.com/in/armaandipsinghmaan/
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
