@@ -1,16 +1,29 @@
+// src/pages/ExpensePage.js
 import React, { useState } from 'react';
+import db from '../../firestore'; // Using absolute import as per jsconfig.json
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import ExpenseList from '../pages/ExpenseList';
 
 const ExpensePage = () => {
   const [expenseName, setExpenseName] = useState('');
   const [expenseAmount, setExpenseAmount] = useState('');
 
-  const handleExpenseSubmit = (e) => {
+  const handleExpenseSubmit = async (e) => {
     e.preventDefault();
-    // For now, just log or alert the data
-    alert(`New Expense: ${expenseName} - $${expenseAmount}`);
-    // In Day 3 or 4, you'll save to a database (e.g., Firestore).
-    setExpenseName('');
-    setExpenseAmount('');
+    try {
+      // Add expense to Firestore under the "expenses" collection
+      await addDoc(collection(db, 'expenses'), {
+        name: expenseName,
+        amount: parseFloat(expenseAmount),
+        createdAt: serverTimestamp(),
+      });
+      alert('Expense added successfully!');
+      setExpenseName('');
+      setExpenseAmount('');
+    } catch (error) {
+      console.error('Error adding expense: ', error);
+      alert('Error adding expense');
+    }
   };
 
   return (
@@ -39,6 +52,10 @@ const ExpensePage = () => {
         </div>
         <button type="submit" className="btn btn-primary">Add Expense</button>
       </form>
+      <div className="mt-5">
+        <h2>Expense List</h2>
+        <ExpenseList />
+      </div>
     </div>
   );
 };
