@@ -1,12 +1,20 @@
-// src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/pages/Navbar';
+import Home from './components/pages/Home';
+import AuthPage from './components/pages/AuthPage';
+import ExpensePage from './components/pages/ExpensePage';
 
 function App() {
   return (
-    <div className="container py-5">
-      <h1 className="text-primary">Bootstrap is working!</h1>
-      <button className="btn btn-success">Test Button</button>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/auth" element={<AuthPage />} />
+        <Route path="/expense" element={<ExpensePage />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -12,6 +12,7 @@ An intelligent budgeting app built with React, Bootstrap, AWS Amplify, and Gener
 
 ## 🛠️ Tech Stack:
 
+
 - **Frontend:** React, JavaScript, Bootstrap
 - **Backend & Hosting:** AWS Amplify
 - **AI Integration:** Generative AI via AWS Bedrock or OpenAI API
