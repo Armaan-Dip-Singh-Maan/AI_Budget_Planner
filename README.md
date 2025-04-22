@@ -40,22 +40,7 @@ Access the app at http://localhost:3000.
 ☁️ AWS Amplify:
 Integrated AWS Amplify services (Authentication, Database, Hosting)
 
-Configure and deploy easily with Amplify CLI.
-
-📅 Development Roadmap:
-Day 1 (Setup): React app initialized, GitHub & AWS Amplify setup. ✔️
-
-Day 2: UI design and frontend components.
-
-Day 3: AWS Amplify Authentication & Backend Integration.
-
-Day 4: Expense & Income Management.
-
-Day 5: Generative AI integration.
-
-Day 6: Discounts Module & financial tips.
-
-Day 7: Testing, Deployment & documentation.
+Configure and deploy easily with Amplify CLI
 
 🧑‍💻 Developed by:
 Armaandip Singh Maan
